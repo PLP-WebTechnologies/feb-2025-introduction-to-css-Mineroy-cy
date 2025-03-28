@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol class="ordered-list" type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <div class="image-container">
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Sample Image from Pexels">
+    </div>
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table class="contact-table">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Main St, NY</td>
+            <td>+1 234 567 8901</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Elm St, CA</td>
+            <td>+1 987 654 3210</td>
+            <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+            <td>Robert Brown</td>
+            <td>789 Pine St, TX</td>
+            <td>+1 543 210 9876</td>
+            <td>robertbrown@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily White</td>
+            <td>321 Oak St, FL</td>
+            <td>+1 678 123 4567</td>
+            <td>emilywhite@example.com</td>
+        </tr>
+        <tr>
+            <td>Michael Green</td>
+            <td>654 Birch St, WA</td>
+            <td>+1 890 456 1234</td>
+            <td>michaelgreen@example.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form class="registration-form" action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="USA">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="Music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="Reading">
+        <label for="reading">Reading</label>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
